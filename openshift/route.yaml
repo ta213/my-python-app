@@ -1,0 +1,10 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: my-python-app
+spec:
+  to:
+    kind: Service
+    name: my-python-app
+  port:
+    targetPort: 8080
